@@ -1,0 +1,241 @@
+/* overall section */
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: oswald, Arial, Helvetica, sans-serif;
+}
+/* body section */
+body{
+    background-color: burlywood;
+    color: black;
+}
+
+/* Header & Hero */
+.hero {
+  background-image: url('../Cback.avif');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  position: relative;
+}
+/* nav menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #574a3f;
+  padding: 10px 20px;
+  color: white;
+}
+/*logo design */
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+}
+/* Humburger menu */
+.navtoggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #a5500b;
+}
+/* navigation list */
+.navlinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+/* navigation list links */
+.navlinks a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* main heading */
+.hero-text h1 {
+  font-size: 48px;
+  margin-top: 20px;
+  color: #332921;
+}
+/* main heading paragraphs*/
+.hero-text p {
+  font-size: 30px;
+  margin-top: 10px;
+  color: #1e1301f9;
+  text-shadow: #a5500b;
+}
+
+/* Sections */
+.content {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+/* heading 2 */
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4b392d;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+/* card */
+.card {
+  background-color: rgb(225, 220, 220);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(34, 29, 29, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 280px;
+}
+/* card images */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+/* card heading3 */
+.card h3 {
+  margin-bottom: 10px;
+  color: #3e2f23;
+}
+
+/* Video Section */
+.video-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f3ece7;
+}
+/* viedo conatiner */
+.video-container {
+  max-width: 580px;
+  margin: auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;;
+}
+/* video-container iframe */
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* FAQ Accordion */
+.faq-section {
+  padding: 40px 20px;
+  background-color: #fff8f1;
+  max-width: 800px;
+  margin: 20px;
+  border: radius 10px;
+border-color: #918479;
+}
+/* FAQ questions */
+.accordion-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+/* FAQ click button */
+.accordion-btn {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #918479;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+/* FAQ content */
+.accordion-content {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+}
+/* Contact us section */
+.contact-section{
+  padding:1opx 20px;
+  margin: auto;
+  max-width: 720px;
+  background-color: #dbcabd;
+  justify-items: center;
+}
+/* Contact us section heading */
+.contact-section h2{
+  font-size: 30px;
+  color: #5f4027;
+}
+/* Contact us form */
+.form-action {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Contact us form question */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* form button*/
+.submit-btn {
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: #a5500b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: center;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #3e2f23;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navlinks {
+    flex-direction: column;
+    display: none;
+    background-color: #3e2f23;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+  }
+/* navigation section */
+  .navlinks.show {
+    display: flex;
+  }
+/* navigation icon */
+  .navtoggle {
+    display: block;
+  }
+/* Cards */
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
